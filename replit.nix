@@ -1,5 +1,6 @@
 { pkgs }: {
   deps = [
+    pkgs.gir-rs
     pkgs.ed
     pkgs.vim
     pkgs.bashInteractive
