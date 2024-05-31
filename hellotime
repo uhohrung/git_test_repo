@@ -1,0 +1,16 @@
+#!/bin/bash
+
+time=`date +%H`
+
+if [ $time -gt 0 ] && [ $time -lt 9 ]
+then
+	echo 굿모닝
+	exit 0
+elif [ $time -gt 9 ] && [ $time -lt 17 ]
+then
+	echo 굿 애프터눈
+	exit 0
+else
+	echo 굿 이브닝
+	exit 0
+fi

@@ -1,0 +1,29 @@
+#!/bin/bash
+
+mon=$1
+
+if [ $# = 0 ]
+then
+	echo "인수가 없습니다."
+	exit 1
+eilf [ $# -ge 2 ]
+then 
+	echo "인수가 많습니다."
+	exit 2
+fi
+
+case $mon in
+	1) echo jan;;
+	2) echo feb;;
+	3) echo mar;;
+	4) echo apr;;
+	5) echo may;;
+	6) echo jun;;
+	7) echo july;;
+	8) echo aug;;
+	*) echo "1년은 12달입니다." ;;
+
+exit 0
+esac
+
+
